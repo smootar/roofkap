@@ -250,7 +250,7 @@ python3 -m http.server 8000
 
 After the site is live:
 
-1. **Set up email forwarding** for tayton@roofkaputah.com
+1. **Set up email forwarding** for info@roofkaputah.com
 2. **Add Google Analytics** for traffic tracking
 3. **Submit to Google Search Console**
 4. **Create Google My Business** listing
