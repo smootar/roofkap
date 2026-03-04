@@ -54,7 +54,7 @@ php -S localhost:8000
 
 ## Contact Information
 
-- **Phone**: 801-473-7448, 801-860-7929
+- **Phone**: 801-432-0648
 - **Email**: tayton@roofkaputah.com
 - **Service Areas**: Salt Lake County, Utah County, Davis County
 

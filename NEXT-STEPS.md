@@ -163,8 +163,7 @@ Wait 15-60 minutes for DNS to propagate.
 
 ## 📞 Contact Information on Site
 
-- Phone: 801-473-7448
-- Phone: 801-860-7929
+- Phone: 801-432-0648
 - Email: tayton@roofkaputah.com (placeholder)
 - Service areas: Salt Lake County, Utah County, Davis County
 
