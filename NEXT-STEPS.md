@@ -129,7 +129,7 @@ Wait 15-60 minutes for DNS to propagate.
 - Form submission (needs Formspree ID)
 - Custom domain (needs DNS setup)
 - Hero image (optional but recommended)
-- Email forwarding for info@roofkaputah.com
+- Email forwarding for tayton@roofkaputah.com
 
 ## 📊 Timeline
 
@@ -165,7 +165,7 @@ Wait 15-60 minutes for DNS to propagate.
 
 - Phone: 801-473-7448
 - Phone: 801-860-7929
-- Email: info@roofkaputah.com (placeholder)
+- Email: tayton@roofkaputah.com (placeholder)
 - Service areas: Salt Lake County, Utah County, Davis County
 
 ## 🔧 Making Updates Later
