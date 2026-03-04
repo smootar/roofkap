@@ -110,14 +110,17 @@
           <h3 style="margin-bottom:var(--sp-2);">Request a Free Estimate</h3>
           <p style="margin-bottom:var(--sp-6); font-size:0.9rem; color:var(--text-muted);">Fill out the form and we'll get back to you within 24 hours. Or call for an immediate response.</p>
 
-          <!--
-            TODO: Replace YOUR_FORM_ID with your Formspree form ID
-            Sign up free at https://formspree.io/
-          -->
-          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contactForm">
-            <input type="text" name="_gotcha" style="display:none">
+          <form action="https://formsubmit.co/tayton@roofkaputah.com" method="POST" id="contactForm">
+            <!-- Spam protection (honeypot) -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable captcha for cleaner UX -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Email subject line -->
             <input type="hidden" name="_subject" value="New Lead - RoofKAP Website">
-            <input type="hidden" name="_next" value="https://roofkaputah.com/contact.html?success=true">
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://smootar.github.io/roofkap/contact.html?success=true">
+            <!-- Use a nice email template -->
+            <input type="hidden" name="_template" value="table">
 
             <div class="form-group">
               <label for="name" class="form-label">Full Name *</label>
