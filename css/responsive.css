@@ -60,32 +60,46 @@
   }
   .mobile-menu-overlay.active { display: block; }
 
-  /* Hero — house image fills top, content below */
+  /* Hero — logo in dark sky at top, house image big below it */
   .hero {
     min-height: auto;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: stretch;
   }
   .hero-background {
     position: relative;
     width: 100%;
     height: auto;
-    min-height: 55vw;
+    aspect-ratio: 1024 / 700;
     object-fit: cover;
     object-position: center bottom;
+    z-index: 1;
   }
   .hero-overlay {
-    position: absolute;
-    background: linear-gradient(180deg,
-      rgba(5,8,22,0.2) 0%,
-      rgba(5,8,22,0.6) 70%,
-      rgba(5,8,22,0.95) 100%);
+    display: none;
   }
   .hero-content {
-    padding: var(--sp-6) var(--sp-4) var(--sp-8);
+    position: relative;
+    z-index: 3;
+    order: -1;
+    background: var(--bg-deepest);
+    padding: var(--sp-6) var(--sp-4) var(--sp-4);
   }
-  .hero-logo { width: 260px; height: 260px; margin-bottom: var(--sp-6); }
-  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-logo {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto var(--sp-4);
+  }
+  .hero-title {
+    font-size: 1rem;
+    margin-bottom: var(--sp-3);
+  }
+  .hero-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: var(--sp-4);
+  }
+  .hero-actions { flex-direction: column; align-items: center; gap: var(--sp-3); }
   .hero-actions .btn { width: 100%; max-width: 320px; }
 
   /* Trust */
@@ -112,8 +126,7 @@
 
 /* ── Small Mobile ≤ 480px ──────────────── */
 @media (max-width: 480px) {
-  .hero-background { min-height: 60vw; }
-  .hero-logo { width: 200px; height: 200px; }
+  .hero-logo { width: 150px; height: 150px; }
   .logo-text { font-size: 1.15rem; }
   .logo-image { width: 38px; height: 38px; }
   .btn { padding: 0.8rem 1.5rem; font-size: 0.82rem; }
