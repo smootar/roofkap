@@ -5,7 +5,7 @@
 /* ── Tablet ≤ 1024px ───────────────────── */
 @media (max-width: 1024px) {
   .hero { min-height: 80vh; }
-  .hero-logo { width: 130px; height: 130px; }
+  .hero-logo { width: 380px; height: 380px; }
   .trust-items { grid-template-columns: repeat(2, 1fr); gap: var(--sp-8); }
   .stats-row  { grid-template-columns: repeat(2, 1fr); gap: var(--sp-8); }
   .highlight-strip { grid-template-columns: 1fr; }
@@ -60,10 +60,31 @@
   }
   .mobile-menu-overlay.active { display: block; }
 
-  /* Hero */
-  .hero { min-height: 75vh; }
-  .hero-logo { width: 110px; height: 110px; margin-bottom: var(--sp-6); }
-  .hero-content { padding: var(--sp-6) var(--sp-4); }
+  /* Hero — house image fills top, content below */
+  .hero {
+    min-height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .hero-background {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 55vw;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+  .hero-overlay {
+    position: absolute;
+    background: linear-gradient(180deg,
+      rgba(5,8,22,0.2) 0%,
+      rgba(5,8,22,0.6) 70%,
+      rgba(5,8,22,0.95) 100%);
+  }
+  .hero-content {
+    padding: var(--sp-6) var(--sp-4) var(--sp-8);
+  }
+  .hero-logo { width: 260px; height: 260px; margin-bottom: var(--sp-6); }
   .hero-actions { flex-direction: column; align-items: center; }
   .hero-actions .btn { width: 100%; max-width: 320px; }
 
@@ -91,8 +112,8 @@
 
 /* ── Small Mobile ≤ 480px ──────────────── */
 @media (max-width: 480px) {
-  .hero { min-height: 70vh; }
-  .hero-logo { width: 90px; height: 90px; }
+  .hero-background { min-height: 60vw; }
+  .hero-logo { width: 200px; height: 200px; }
   .logo-text { font-size: 1.15rem; }
   .logo-image { width: 38px; height: 38px; }
   .btn { padding: 0.8rem 1.5rem; font-size: 0.82rem; }
